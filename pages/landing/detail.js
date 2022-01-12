@@ -24,7 +24,7 @@ export default function campaign_detail() {
           <img src="/back.svg"></img>
         </a>
         <img src="/campaign-banner.png"></img>
-        <h1>The Back Office for a Crypto-Exchange Platform</h1>
+        <h1>Crypto-Exchange Dashboard</h1>
         <div className="nda">
           To comply with the NDA, all of the case study’s confidential contents
           have all been altered, and the interface was completely redesigned.
@@ -144,7 +144,7 @@ export default function campaign_detail() {
           </div>
         </div>
       </div>
-      <div className="bg-main pb40 pt40 ph80">aaaaaa</div>
+      <div className="bg-main pb40 pt40 ph80"></div>
       <div className="bg-main pb40 pt40 ph80">aaaaaa</div>
       <div className="bg-main pb40 pt40 ph80">aaaaaa</div>
       <div className="bg-main pb40 pt40 ph80">aaaaaa</div>
