@@ -133,7 +133,10 @@ export default function campaign_detail() {
         </div>
       </div>
       <div className="bg-plain pb34 pt40 ph80 text-center">
-        <h3 className="alata">Brainstorming Workshop</h3>
+        <h2 className="alata d-inline-flex align-items-center">
+          <img className="mr10 w24" src="/brain.svg"></img>
+          Brainstorming Workshop
+        </h2>
         <div style={{ height: 24 }} />
         <div className="mw720 text-left  mh-auto">
           After a few revisions of the doc and confirmation with the client, I
@@ -188,7 +191,10 @@ export default function campaign_detail() {
         </div>
       </div>
       <div className="bg-plain pb50 pt40 ph80 text-center">
-        <h3 className="alata">A/B/n Testing</h3>
+        <h2 className="alata d-inline-flex align-items-center fs28">
+          <img className="mr10 w24" src="/abn.svg"></img>
+          A/B/n Testing
+        </h2>
         <div style={{ height: 24 }} />
         <div className="mw720 text-left mh-auto">
           This was a small preliminary test where we aimed to find the most
@@ -206,99 +212,112 @@ export default function campaign_detail() {
           format (MTWTFSS or SMTWTFS) would fit user’s mental model better.{" "}
         </div>
         <div style={{ height: 30 }} />
-        
-        <video controls src="/campaign-testing (1).mp4" />
-        <video controls src="/campaign-testing (2).mp4" />
+
+        <div className="d-flex gapx60 justify-content-center flex-wrap">
+          <video
+            className="mw520 br10"
+            controls
+            src="/campaign-testing (1).mp4"
+          />
+          <video
+            className="mw520 br10"
+            controls
+            src="/campaign-testing (2).mp4"
+          />
+        </div>
       </div>
-      <div className="bg-main pb40 pt40 ph80">aaaaaa</div>
-      <div className="bg-main pb40 pt40 ph80">aaaaaa</div>
-      <div className="bg-main pb40 pt40 ph80">aaaaaa</div>
-      <div className="bg-main pb40 pt40 ph80">aaaaaa</div>
-      <div className="bg-main pb40 pt40 ph80">aaaaaa</div>
-      <div className="bg-main pb40 pt40 ph80">aaaaaa</div>
-      <div className="bg-main pb40 pt40 ph80">aaaaaa</div>
-      <div className="bg-main pb40 pt40 ph80">aaaaaa</div>
-      <div className="bg-main pb40 pt40 ph80">aaaaaa</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
-      <div> content</div>
+
+      <div className="bg-main pb40 pt40 ph80">
+        <h2 className="alata d-inline-flex align-items-center fs28 m0">
+          <img className="mr10 w24" src="/mock.svg"></img>
+          Mockup
+        </h2>
+        <div style={{ height: 24 }} />
+        <h3 className="m0">
+          After a few iterations of the wireframe and the low-fidelity
+          prototype, here was the approach we decided to take.
+        </h3>
+
+        <div style={{ height: 30 }} />
+        <div className="d-flex gapx60 gapy30 justify-content-center flex-wrap">
+          <div className="mw610">
+            <img className="mr10" src="/campaign-mockup-1.png"></img>
+            <div className="caption-14">
+              The system has the flexibility to support different AND/OR
+              relations. Based on the example, it will cost more for people on
+              the Silver level than Gold to accomplish the tasks.
+            </div>
+          </div>{" "}
+          <div className="mw610">
+            <img className="mr10" src="/campaign-mockup-2.png"></img>
+            <div className="caption-14">
+              The creation page, where users customize their campaign tasks,
+              available in 3 repetition choices: 7 day, 14 day, and none (not
+              repeating).
+            </div>
+          </div>{" "}
+          <div className="mw610">
+            <img className="mr10" src="/campaign-mockup-3.png"></img>
+            <div className="caption-14">
+              Although the “Task Bank” menu provides the same function, here is
+              a shortcut in case users can’t find a suitable task during the
+              campaign creation.
+            </div>
+          </div>{" "}
+          <div className="mw610">
+            <img className="mr10" src="/campaign-mockup-4.png"></img>
+            <div className="caption-14">
+              The last step consists of preview to let users verify their
+              campaign rules.
+            </div>
+          </div>
+          <div className="mw1100">
+            <img className="mr10" src="/campaign-mockup-5.png"></img>
+            <div className="caption-14">
+              The dashboard explains the campaign performance across its period.
+              Beside shows the quick glance of financial summary to assess the
+              campaign performance.
+            </div>
+          </div>
+          <div className="mw1100">
+            <img className="mr10" src="/campaign-mockup-6.png"></img>
+            <div className="caption-14">
+              On the same detail page, user can see the details of each
+              transaction for deeper analysis of client behavior.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="scroll-menu-wrapper">
+        <div className="scroll-menu">
+          <div className="scroll-menu-items d-flex justify-content-center align-items-center flex-column py7">
+            <div className="w46 h46 bg-white br-50 d-flex justify-content-center align-items-center">
+              <img src="/ui-link.svg" />
+            </div>
+            <div className="w46 h46 bg-white br-50 d-flex justify-content-center align-items-center">
+              <img src="/brain-link.svg" />
+            </div>
+            <div className="w46 h46 bg-white br-50 d-flex justify-content-center align-items-center">
+              <img src="/ia-link.svg" />
+            </div>
+            <div className="w46 h46 bg-white br-50 d-flex justify-content-center align-items-center">
+              <img src="/abn-link.svg" />
+            </div>
+            <div className="w46 h46 bg-white br-50 d-flex justify-content-center align-items-center">
+              <img src="/mockup-link.svg" />
+            </div>
+          </div>
+          <div style={{ height: 19 }}></div>
+          <div className="scroll-menu-btn"></div>
+        </div>
+      </div>
+      <div className="bg-plain pb50 pt40 ph80 d-flex">
+        <div className="flex-fill" />
+        <h2 className="alata normal fs36 m0">Next</h2>
+        <div className="w24 " />
+        <img className="w24" src="/arrow-right.svg" />
+      </div>
       <style jsx>{`
         @media only screen and (min-width: 976px) {
           .two-side-section {
@@ -314,6 +333,30 @@ export default function campaign_detail() {
 
         .two-side-section .right-side img {
           width: 100%;
+        }
+
+        .scroll-menu-wrapper {
+          position: sticky;
+          left: calc(100vw - 60px);
+          bottom: 0;
+          width: 0;
+          height: 0;
+        }
+        .scroll-menu {
+          position: absolute;
+          bottom: 32px;
+          right: -16px;
+        }
+        .scroll-menu-btn {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          background: rgba(255, 255, 255, 0.6);
+        }
+        .scroll-menu-items {
+          width: 60px;
+          border-radius: 30px;
+          background: rgba(255, 255, 255, 0.6);
         }
       `}</style>
     </Layout>
