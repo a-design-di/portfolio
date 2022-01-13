@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Layout from "../components/Layout";
 import ScrollIndicator from "../components/ScrollIndicator";
 
@@ -19,26 +20,33 @@ export default function Home() {
           }}
           src="/polygon2.svg"
         />
-        <div className="carousel relative">
-          <div className="slick">
-            <div className="dot" active="active" />
-            <div className="dot" />
-          </div>
-          <div className="slick-gap"></div>
+        <div className="content-wrapper">
+          <div className="carousel relative">
+            <div style={{ width: 80 }} />
+            <div className="slick">
+              <div className="dot" active="active" />
+              <div className="dot" />
+            </div>
+            <div className="slick-gap"></div>
 
-          <div className="carousel-page">
-            <div className="rightsection">
-              <img src="/campaign-banner.png" />
-            </div>
-            <div className="leftsection">
-              <div className="Alata section-title">
-                Crypto-Exchange Dashboard
+            <div className="carousel-page">
+              <div className="rightsection">
+                <img src="/campaign-banner.png" />
               </div>
-              <div className="section-subtitle">
-                September 2021 - November 2021
+              <div className="leftsection">
+                <div className="Alata section-title">
+                  Crypto-Exchange Dashboard
+                </div>
+                <div className="section-subtitle">
+                  September 2021 - November 2021
+                </div>
+                <Link href="/landing/detail">
+                <div className="section-btn">View Details</div>
+                </Link>
               </div>
-              <div className="section-btn">View Details</div>
             </div>
+
+            <div style={{ width: 128 }} />
           </div>
         </div>
       </section>
@@ -77,27 +85,23 @@ export default function Home() {
             align-items: flex-start;
           }
           .carousel-page {
-            position: absolute;
             right: 48px;
             min-height: 50vh;
             display: flex;
             align-items: stretch;
             flex: 1;
-            justify-content: space-between;
+            justify-content: center;
             flex-direction: row-reverse;
           }
           .carousel {
+            flex: 1;
             margin: auto;
-            max-width: 1280px;
             display: flex;
             min-height: 50vh;
             align-items: stretch;
             flex-direction: row-reverse;
           }
           .slick {
-            position: absolute;
-            top: 50%;
-            transform: translateX(-50%);
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -117,6 +121,14 @@ export default function Home() {
           }
           .slick-gap {
             width: 40px;
+          }
+          .content-wrapper {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
           }
         }
       `}</style>
