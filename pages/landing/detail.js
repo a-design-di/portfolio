@@ -121,16 +121,95 @@ export default function campaign_detail() {
           </h3>
         </div>
         <div className="right-side">
-          <img style={{ marginBottom: 20 }} src="/campaign-interview (1).png" />
-          <img src="/campaign-interview (2).png" />
+          <img
+            className="br10"
+            style={{ marginBottom: 20 }}
+            src="/campaign-interview (1).png"
+          />
+          <img className="br10" src="/campaign-interview (2).png" />
           <div className="caption">
             Screenshots are sourced from Binance and only taken for references.
           </div>
         </div>
       </div>
-      <div className="bg-main pb40 pt40 ph80"></div>
-      <div className="bg-main pb40 pt40 ph80">aaaaaa</div>
-      <div className="bg-main pb40 pt40 ph80">aaaaaa</div>
+      <div className="bg-plain pb34 pt40 ph80 text-center">
+        <h3 className="alata">Brainstorming Workshop</h3>
+        <div style={{ height: 24 }} />
+        <div className="mw720 text-left  mh-auto">
+          After a few revisions of the doc and confirmation with the client, I
+          collected the UXR, frontend, and backend developers to brainstorm how
+          to approach with this project. I facilitated the discussion by
+          presenting the Design Brief doc.
+        </div>
+        <div style={{ height: 30 }} />
+        <img className="mw640" src="/workshop-pic.jpg"></img>
+      </div>
+      <div className="bg-main pb40 pt40 ph80 two-side-section">
+        <div>
+          <div className="d-flex align-items-center">
+            <img className="mr10 w24" src="/ia.svg"></img>
+            <h2 className="alata">IA& Wireframe</h2>
+          </div>
+          <h3>
+            One of the most important consensus coming from the workshop is, the
+            concept of 3 layers:
+            <ul>
+              <li>Campaign</li>
+              <li>Day, and</li>
+              <li>Task</li>
+            </ul>
+          </h3>
+
+          <h3>
+            <br />
+            The most outter layer (campaign) is a seasonal event that the
+            customer sees probably in a web hero banner or inbox. Inside it
+            there will be specific dates (day) that the customers have to
+            perform some actions (task).
+          </h3>
+          <h3>
+            <br />
+            In the workshop, most people agreed with the structure and general
+            flow, but we produced a few ideas in particular for step 2, where
+            selecting tasks takes in place.
+          </h3>
+        </div>
+        <div className="right-side">
+          <img className="br10" src="/campaign-ia-n-wireframe (1).png" />
+          <div style={{ marginBottom: 20 }} className="caption">
+            Click here for a higher resolution preview of information
+            architecture (not sitemap).
+          </div>
+
+          <img className="br10" src="/campaign-ia-n-wireframe (2).png" />
+          <div className="caption">
+            Snippet of the wireframe that was discussed rigorously.
+          </div>
+        </div>
+      </div>
+      <div className="bg-plain pb50 pt40 ph80 text-center">
+        <h3 className="alata">A/B/n Testing</h3>
+        <div style={{ height: 24 }} />
+        <div className="mw720 text-left mh-auto">
+          This was a small preliminary test where we aimed to find the most
+          suitable design for the users to execute the second step in creating a
+          campaign. This testing was done as there was multiple approaches
+          generated in the workshop. Since the sample could not be big, the
+          method was combined with usability test where tasks were provided, and
+          followed by more in-depth interview. The metrics for evaluating the
+          test were findability and speed of completion.
+        </div>
+
+        <div style={{ height: 40 }} />
+        <div className="mw720 text-left glow bold mh-auto">
+          The hypothesis was, having a calendar layout that has the familiar
+          format (MTWTFSS or SMTWTFS) would fit user’s mental model better.{" "}
+        </div>
+        <div style={{ height: 30 }} />
+        
+        <video controls src="/campaign-testing (1).mp4" />
+        <video controls src="/campaign-testing (2).mp4" />
+      </div>
       <div className="bg-main pb40 pt40 ph80">aaaaaa</div>
       <div className="bg-main pb40 pt40 ph80">aaaaaa</div>
       <div className="bg-main pb40 pt40 ph80">aaaaaa</div>
