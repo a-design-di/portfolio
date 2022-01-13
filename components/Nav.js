@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { motion } from "framer-motion"
 
 export default function nav() {
   const router = useRouter();
@@ -11,7 +12,7 @@ export default function nav() {
         <div className="w16"></div>
         <h3>Vigor Arisandi</h3>
         <div className="space"></div>
-        <Link href="About" active={isAboutPage}>
+        <Link href="/about" active={isAboutPage}>
           <a><h3>About</h3></a>
         </Link>
         <div className="w20"></div>

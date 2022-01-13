@@ -71,6 +71,10 @@ body {
   width: 100px;
 }
 
+.mw-100vw {
+  max-width: 100vw;
+}
+
 .h8 {
   height: 8px;
 }
@@ -136,4 +140,9 @@ body {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.min-page-height {
+  min-height: calc(100vh - 100px);
+  box-sizing: border-box;
 }
