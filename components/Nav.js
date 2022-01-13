@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useRouter } from "next/router";
 
 export default function nav() {
@@ -10,15 +11,15 @@ export default function nav() {
         <div className="w16"></div>
         <h3>Vigor Arisandi</h3>
         <div className="space"></div>
-        <a href="About" active={isAboutPage}>
-          <h3>About</h3>
-        </a>
+        <Link href="About" active={isAboutPage}>
+          <a><h3>About</h3></a>
+        </Link>
         <div className="w20"></div>
         <div className="divider"></div>
         <div className="w20"></div>
-        <a href="/my-resume.pdf" target="_blank">
-          <h3>Resume</h3>
-        </a>
+        <Link href="/my-resume.pdf" target="_blank">
+          <a><h3>Resume</h3></a>
+        </Link>
       </div>
       <div className="h100"></div>
       <style jsx>{`
