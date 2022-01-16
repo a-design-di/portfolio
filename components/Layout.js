@@ -5,7 +5,7 @@ export default function Layout({children}) {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App222222</title>
+        <title>Vigor Arisandi</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
