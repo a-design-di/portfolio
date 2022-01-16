@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
 export default function nav() {
   const router = useRouter();
@@ -8,18 +8,26 @@ export default function nav() {
   return (
     <>
       <div className="nav">
-        <img src="/logo.svg"></img>
+        <Link href="/">
+          <img src="/logo.svg"></img>
+        </Link>
         <div className="w16"></div>
-        <h3>Vigor Arisandi</h3>
+        <Link href="/">
+          <h3>Vigor Arisandi</h3>
+        </Link>
         <div className="space"></div>
         <Link href="/about" active={isAboutPage}>
-          <a><h3>About</h3></a>
+          <a>
+            <h3>About</h3>
+          </a>
         </Link>
         <div className="w20"></div>
         <div className="divider"></div>
         <div className="w20"></div>
         <Link href="/my-resume.pdf" target="_blank">
-          <a><h3>Resume</h3></a>
+          <a>
+            <h3>Resume</h3>
+          </a>
         </Link>
       </div>
       <div className="h100"></div>
@@ -41,6 +49,7 @@ export default function nav() {
           left: 0;
           right: 0;
           z-index:1000;
+          align-items: center;
         }
         .divider {
           background-color: #424f77;
