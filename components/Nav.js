@@ -24,7 +24,7 @@ export default function nav() {
         <div className="w20"></div>
         <div className="divider"></div>
         <div className="w20"></div>
-        <a>
+        <a href="/my-resume.pdf" target="_blank">
           <h3>Resume</h3>
         </a>
       </div>
