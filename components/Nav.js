@@ -24,11 +24,9 @@ export default function nav() {
         <div className="w20"></div>
         <div className="divider"></div>
         <div className="w20"></div>
-        <Link href="/my-resume.pdf" target="_blank">
-          <a>
-            <h3>Resume</h3>
-          </a>
-        </Link>
+        <a>
+          <h3>Resume</h3>
+        </a>
       </div>
       <div className="h100"></div>
       <style jsx>{`
