@@ -1,0 +1,24 @@
+@media only screen and (max-width: 768px) {
+  .content-section {
+    min-height: calc(100vh - 44px);
+    box-sizing: border-box;
+  }
+
+  .min-page-height {
+    min-height: calc(100vh - 44px);
+    box-sizing: border-box;
+  }
+
+  .sm-h44 {
+    height: 44px;
+  }
+
+  .sm-ph32 {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .sm-br16 {
+    border-radius: 16px;
+  }
+}

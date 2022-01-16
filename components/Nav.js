@@ -28,9 +28,9 @@ export default function nav() {
           <h3>Resume</h3>
         </a>
       </div>
-      <div className="h100"></div>
+      <div className="h100 sm-h44"></div>
       <style jsx>{`
-           h3 {
+        h3 {
           margin: 0;
         }
         .nav {
@@ -46,7 +46,7 @@ export default function nav() {
           top: 0;
           left: 0;
           right: 0;
-          z-index:1000;
+          z-index: 1000;
           align-items: center;
         }
         .divider {
@@ -62,10 +62,18 @@ export default function nav() {
           text-decoration: none;
           transition: color 0.5s;
         }
-        a:hover, a[active="true"] {
-            color: white;
-          }
+        a:hover,
+        a[active="true"] {
+          color: white;
+        }
 
+        @media only screen and (max-width: 768px) {
+          .nav {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+          }
         }
       `}</style>
     </>

@@ -1,26 +1,37 @@
+import Link from "next/link";
 import Layout from "../../components/Layout";
 
 export default function campaign_detail() {
   return (
     <Layout>
       <section className="bg-main pb40 pt40 ph80 content-section">
-        <a href="/">
-          <img src="/back.svg"></img>
-        </a>
-        <img src="/campaign-banner.png"></img>
-        <h1>Crypto-Exchange Dashboard</h1>
-        <div className="nda">
-          To comply with the NDA, all of the case study’s confidential contents
-          have all been altered, and the interface was completely redesigned.
+        <Link href="/">
+          <img className="absolute"  src="/back.svg"></img>
+        </Link>
+        <div className="min-page-height d-flex flex-column justify-content-center">
+          <div className="d-flex align-items-center ">
+            <img src="/campaign-banner.png"></img>
+            <div className="mw580">
+              <h1>Crypto-Exchange Dashboard</h1>
+              <div className="nda">
+                To comply with the NDA, all of the case study’s confidential
+                contents have all been altered, and the interface was completely
+                redesigned.
+              </div>
+            </div>
+          </div>
+          <div className="d-flex gapx60">
+            <h2 className="alata">Background</h2>
+            <h3>
+              The client was a marketing lead for a B2C application with
+              600k-700k MAU in 2021 Q3-Q4. To deliver and evaluate the campaigns
+              to their app, a back office is needed to be developed. Hence my
+              role as a Product Designer is to comprehend both business needs
+              and how the microservice APIs can support prior to designing the
+              back office.
+            </h3>
+          </div>
         </div>
-        <h2 className="alata">Background</h2>
-        <h3>
-          The client was a marketing lead for a B2C application with 600k-700k
-          MAU in 2021 Q3-Q4. To deliver and evaluate the campaigns to their app,
-          a back office is needed to be developed. Hence my role as a Product
-          Designer is to comprehend both business needs and how the microservice
-          APIs can support prior to designing the back office.
-        </h3>
       </section>
       <section className="bg-plain pb40 pt40 ph80 d-flex overflow-hidden">
         <h2 className="alata flex-shrink-0">My Process</h2>

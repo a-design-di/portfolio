@@ -30,19 +30,23 @@ export default function Home() {
             <div className="slick-gap"></div>
 
             <div className="carousel-page">
-              <div className="rightsection">
-                <img src="/campaign-banner.png" />
-              </div>
-              <div className="leftsection">
-                <h1 className="Alata section-title minw500 m0">
-                  Crypto-Exchange Dashboard
-                </h1>
-                <div className="section-subtitle">
-                  September 2021 - November 2021
+              <div className="carousel-page-content">
+                <div className="rightsection sm-ph32">
+                  <div className="bg-card mw-100 sm-br16">
+                    <img className="mw-100" src="/campaign-banner.png" />
+                  </div>
                 </div>
-                <Link href="/landing/detail">
-                <div className="section-btn">View Details</div>
-                </Link>
+                <div className="leftsection sm-ph32">
+                  <h1 className="Alata section-title minw500 m0">
+                    Crypto-Exchange Dashboard
+                  </h1>
+                  <div className="section-subtitle">
+                    September 2021 - November 2021
+                  </div>
+                  <Link href="/landing/detail">
+                    <div className="section-btn">View Details</div>
+                  </Link>
+                </div>
               </div>
             </div>
 
@@ -76,7 +80,7 @@ export default function Home() {
           padding-top: 0;
         }
 
-        @media only screen and (min-width: 200px) {
+        @media only screen and (min-width: 768px) {
           .leftsection,
           .rightsection {
             display: flex;
@@ -87,11 +91,7 @@ export default function Home() {
           .carousel-page {
             right: 48px;
             min-height: 50vh;
-            display: flex;
-            align-items: stretch;
             flex: 1;
-            justify-content: center;
-            flex-direction: row-reverse;
           }
           .carousel {
             flex: 1;
@@ -129,6 +129,30 @@ export default function Home() {
             left: 0;
             right: 0;
             display: flex;
+          }
+          .carousel-page-content {
+            display: flex;
+            min-height: 50vh;
+            align-items: stretch;
+            flex-direction: row-reverse;
+          }
+        }
+        @media only screen and (max-width: 768px) {
+          .carousel-page-content {
+            display: flex;
+            min-height: 50vh;
+            align-items: stretch;
+            justify-content: center;
+            flex-direction: column;
+            min-height: calc(100vh - 44px);
+            box-sizing: border-box;
+          }
+          .leftsection {
+            padding-top: 16px;
+          }
+          .section-title {
+            display: inline;
+            font-size: 36px
           }
         }
       `}</style>
