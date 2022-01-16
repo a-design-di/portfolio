@@ -34,9 +34,9 @@ export default function Home() {
                 <img src="/campaign-banner.png" />
               </div>
               <div className="leftsection">
-                <div className="Alata section-title">
+                <h1 className="Alata section-title minw500 m0">
                   Crypto-Exchange Dashboard
-                </div>
+                </h1>
                 <div className="section-subtitle">
                   September 2021 - November 2021
                 </div>
