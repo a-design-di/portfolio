@@ -115,6 +115,9 @@
 .gap60 {
   gap: 60px;
 }
+.gapx40 {
+  column-gap: 40px;
+}
 .gapx60 {
   column-gap: 60px;
 }

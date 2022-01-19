@@ -106,93 +106,108 @@ export default function campaign_detail() {
           request, and manual work even to reset user’s password.
         </div>
         <div style={{ height: 30 }} />
-        <LazyImg className="mw640" src="/workshop-pic.jpg" />
+
+        <div className="d-flex gapx40 gapy30 justify-content-center flex-wrap">
+          <div className="mw520">
+            <LazyImg
+              className="mw-100 br10 mr10"
+              src="/access-contextual.jpg"
+            />
+          </div>
+          <div className="mw520">
+            <video
+              className="mw520 br10"
+              controls
+              src="/access-heuristic (3).mov"
+            />
+            <div className="caption-14 text-left">
+              Now that... is such a massive list to scroll without search
+              functionality! Thank god browsers nowadays are equipped with
+              build-in search function.
+            </div>
+          </div>
+        </div>
       </div>
       <div id="ia" className="bg-main relative">
         <div className="content-container  pb40 pt40 ph80 two-side-section">
           <div>
             <div className="d-flex align-items-center">
-              <img className="mr10 w24" src="/ia.svg"></img>
-              <h2 className="alata">IA& Wireframe</h2>
+              <img className="mr10 w24" src="/idea-white.svg"></img>
+              <h2 className="alata">Workshop</h2>
             </div>
             <h3>
-              One of the most important consensus coming from the workshop is,
-              the concept of 3 layers:
+              The previous steps informed us that multiple platforms were used
+              in the user journey to grant access. Therefore, this workshop was
+              necessary to break down the tasks, the persona and the platforms
+              used to complete the journey.
+              <br />
+              We came up with a solution to integrate most of them into:
               <ul>
-                <li>Campaign</li>
-                <li>Day, and</li>
-                <li>Task</li>
+                <li>Connect to the 3rd party AD (Active Directory)</li>
+                <li>SSO (Single Sign On) to prevent unknown users</li>
+                <li>Activity logs</li>
+                <li>Automated password reset</li>
+                <li>Email notification</li>
+                <li>Build-in batch selections instead of file upload, and</li>
+                <li>
+                  The concept of “Fixed User Groups” and “Customizable User
+                  Groups”
+                </li>
               </ul>
-            </h3>
-
-            <h3>
-              <br />
-              The most outter layer (campaign) is a seasonal event that the
-              customer sees probably in a web hero banner or inbox. Inside it
-              there will be specific dates (day) that the customers have to
-              perform some actions (task).
-            </h3>
-            <h3>
-              <br />
-              In the workshop, most people agreed with the structure and general
-              flow, but we produced a few ideas in particular for step 2, where
-              selecting tasks takes in place.
             </h3>
           </div>
           <div className="right-side">
-            <LazyImg
-              className="br10 w-100"
-              src="/campaign-ia-n-wireframe (1).png"
-            />
+            <LazyImg className="br10 w-100" src="/access-workshop.png" />
             <div style={{ marginBottom: 20 }} className="caption">
-              Click here for a higher resolution preview of information
-              architecture (not sitemap).
-            </div>
-
-            <LazyImg
-              className="br10 w-100"
-              src="/campaign-ia-n-wireframe (2).png"
-            />
-            <div className="caption">
-              Snippet of the wireframe that was discussed rigorously.
+              The affinity diagram method was used to brainstorm.
             </div>
           </div>
         </div>
       </div>
       <div id="abn" className="bg-plain pb50 pt40 ph80 text-center">
         <h2 className="alata d-inline-flex align-items-center fs28">
-          <img className="mr10 w24" src="/abn.svg"></img>
-          A/B/n Testing
+          <img className="mr10 w24" src="/wireframe-white.svg"></img>
+          Wireframe
         </h2>
         <div style={{ height: 24 }} />
         <div className="mw720 text-left mh-auto">
-          This was a small preliminary test where we aimed to find the most
-          suitable design for the users to execute the second step in creating a
-          campaign. This testing was done as there was multiple approaches
-          generated in the workshop. Since the sample could not be big, the
-          method was combined with usability test where tasks were provided, and
-          followed by more in-depth interview. The metrics for evaluating the
-          test were findability and speed of completion.
-        </div>
-
-        <div style={{ height: 40 }} />
-        <div className="mw720 text-left glow bold mh-auto">
-          The hypothesis was, having a calendar layout that has the familiar
-          format (MTWTFSS or SMTWTFS) would fit user’s mental model better.{" "}
+          It was quite a lot of new concept for the system hence we broke them
+          down into three different main flows: general user, super admin, and
+          the admin. Meaning, some of the pages cannot even be accessed by the
+          admin.
         </div>
         <div style={{ height: 30 }} />
-
-        <div className="d-flex gapx60 justify-content-center flex-wrap">
-          <video
-            className="mw520 br10"
-            controls
-            src="/campaign-testing (1).mp4"
-          />
-          <video
-            className="mw520 br10"
-            controls
-            src="/campaign-testing (2).mp4"
-          />
+        <div className="d-flex gapx40 gapy30 justify-content-center flex-wrap">
+          <div className="mw720">
+            <LazyImg
+              className="mw-100 br10 mr10"
+              src="/access-wireframe (2).png"
+            />
+            <div className="caption-14 text-left">
+              Super admin will first set up the connection with the
+              organization’s directory.
+            </div>
+          </div>
+          <div className="mw520">
+            <LazyImg
+              className="mw-100 br10 mr10"
+              src="/access-wireframe (3).png"
+            />
+            <div className="caption-14 text-left">
+              Only admin will have the access to assign users to the groups and
+              adjust their access list.
+            </div>
+          </div>
+          <div className="mw520">
+            <LazyImg
+              className="mw-100 br10 mr10"
+              src="/access-wireframe (1).png"
+            />
+            <div className="caption-14 text-left">
+              With the SSO method, users will be redirected to the pages they
+              are assigned to.
+            </div>
+          </div>
         </div>
       </div>
 
@@ -204,56 +219,38 @@ export default function campaign_detail() {
           </h2>
           <div style={{ height: 24 }} />
           <h3 className="m0">
-            After a few iterations of the wireframe and the low-fidelity
-            prototype, here was the approach we decided to take.
+            Though we separated the flow into 3 main persona, they are all still
+            in the same system. There were loads of edge-cases needed to be
+            considered, but below are some of the main pages.
           </h3>
 
           <div style={{ height: 30 }} />
           <div className="d-flex gapx60 gapy30 justify-content-center flex-wrap">
-            <div className="mw610">
-              <LazyImg className="mr10" src="/campaign-mockup-1.png" />
+            <div className="mw520">
+              <LazyImg className="mw-100 br10 mr10" src="/access-mockup (1).png" />
               <div className="caption-14">
-                The system has the flexibility to support different AND/OR
-                relations. Based on the example, it will cost more for people on
-                the Silver level than Gold to accomplish the tasks.
+                A directory page for the super admin to connect to the third
+                party.
               </div>
             </div>
-            <div className="mw610">
-              <LazyImg className="mr10" src="/campaign-mockup-2.png" />
+            <div className="mw520">
+              <LazyImg className="mw-100 br10 mr10" src="/access-mockup (2).png" />
               <div className="caption-14">
-                The creation page, where users customize their campaign tasks,
-                available in 3 repetition choices: 7 day, 14 day, and none (not
-                repeating).
+                Some required fields from one of the third parties.
               </div>
             </div>
-            <div className="mw610">
-              <LazyImg className="mr10" src="/campaign-mockup-3.png" />
+            <div className="mw520">
+              <LazyImg className="mw-100 br10 mr10" src="/access-mockup (3).png" />
               <div className="caption-14">
-                Although the “Task Bank” menu provides the same function, here
-                is a shortcut in case users can’t find a suitable task during
-                the campaign creation.
+                A hierarchy tree for displaying the overall structure for admin
+                to otganize the access. User can also change the business logic
+                to apply some dependencies.
               </div>
             </div>
-            <div className="mw610">
-              <LazyImg className="mr10" src="/campaign-mockup-4.png" />
+            <div className="mw520">
+              <LazyImg className="mw-100 br10 mr10" src="/access-mockup (4).png" />
               <div className="caption-14">
-                The last step consists of preview to let users verify their
-                campaign rules.
-              </div>
-            </div>
-            <div className="mw1100">
-              <LazyImg className="mr10" src="/campaign-mockup-5.png" />
-              <div className="caption-14">
-                The dashboard explains the campaign performance across its
-                period. Beside shows the quick glance of financial summary to
-                assess the campaign performance.
-              </div>
-            </div>
-            <div className="mw1100">
-              <LazyImg className="mr10" src="/campaign-mockup-6.png" />
-              <div className="caption-14">
-                On the same detail page, user can see the details of each
-                transaction for deeper analysis of client behavior.
+                The detail page to track all of the access within an account.
               </div>
             </div>
           </div>
@@ -340,10 +337,18 @@ export default function campaign_detail() {
         </div>
       </motion.div>
       <div className="bg-plain pb50 pt40 ph80 d-flex">
-        <div className="flex-fill" />
-        <h2 className="alata normal fs36 m0">Next case study</h2>
-        <div className="w24 " />
-        <img className="w24" src="/arrow-right.svg" />
+        <Link href="/case-studies/campaign">
+          <span className="d-flex align-item-center cursor-pointer">
+            <img
+              className="w24"
+              style={{ transform: "rotate(180deg)" }}
+              src="/arrow-right.svg"
+            />
+            <div className="w24 " />
+            <h2 className="alata normal fs36 m0">Previous case study</h2>
+            <div className="flex-fill" />
+          </span>
+        </Link>
       </div>
       <style jsx>{`
         @media only screen and (min-width: 976px) {

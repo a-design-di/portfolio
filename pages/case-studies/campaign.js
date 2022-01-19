@@ -283,7 +283,10 @@ export default function campaign_detail() {
           <div style={{ height: 30 }} />
           <div className="d-flex gapx60 gapy30 justify-content-center flex-wrap">
             <div className="mw610">
-              <LazyImg className="mw-100 br10 mr10" src="/campaign-mockup-1.png" />
+              <LazyImg
+                className="mw-100 br10 mr10"
+                src="/campaign-mockup-1.png"
+              />
               <div className="caption-14">
                 The system has the flexibility to support different AND/OR
                 relations. Based on the example, it will cost more for people on
@@ -291,7 +294,10 @@ export default function campaign_detail() {
               </div>
             </div>
             <div className="mw610">
-              <LazyImg className="mw-100 br10 mr10" src="/campaign-mockup-2.png" />
+              <LazyImg
+                className="mw-100 br10 mr10"
+                src="/campaign-mockup-2.png"
+              />
               <div className="caption-14">
                 The creation page, where users customize their campaign tasks,
                 available in 3 repetition choices: 7 day, 14 day, and none (not
@@ -299,7 +305,10 @@ export default function campaign_detail() {
               </div>
             </div>
             <div className="mw610">
-              <LazyImg className="mw-100 br10 mr10" src="/campaign-mockup-3.png" />
+              <LazyImg
+                className="mw-100 br10 mr10"
+                src="/campaign-mockup-3.png"
+              />
               <div className="caption-14">
                 Although the “Task Bank” menu provides the same function, here
                 is a shortcut in case users can’t find a suitable task during
@@ -307,14 +316,20 @@ export default function campaign_detail() {
               </div>
             </div>
             <div className="mw610">
-              <LazyImg className="mw-100 br10 mr10" src="/campaign-mockup-4.png" />
+              <LazyImg
+                className="mw-100 br10 mr10"
+                src="/campaign-mockup-4.png"
+              />
               <div className="caption-14">
                 The last step consists of preview to let users verify their
                 campaign rules.
               </div>
             </div>
             <div className="mw1100">
-              <LazyImg className="mw-100 br10 mr10" src="/campaign-mockup-5.png" />
+              <LazyImg
+                className="mw-100 br10 mr10"
+                src="/campaign-mockup-5.png"
+              />
               <div className="caption-14">
                 The dashboard explains the campaign performance across its
                 period. Beside shows the quick glance of financial summary to
@@ -322,7 +337,10 @@ export default function campaign_detail() {
               </div>
             </div>
             <div className="mw1100">
-              <LazyImg className="mw-100 br10 mr10" src="/campaign-mockup-6.png" />
+              <LazyImg
+                className="mw-100 br10 mr10"
+                src="/campaign-mockup-6.png"
+              />
               <div className="caption-14">
                 On the same detail page, user can see the details of each
                 transaction for deeper analysis of client behavior.
@@ -413,9 +431,13 @@ export default function campaign_detail() {
       </motion.div>
       <div className="bg-plain pb50 pt40 ph80 d-flex">
         <div className="flex-fill" />
-        <h2 className="alata normal fs36 m0">Next case study</h2>
-        <div className="w24 " />
-        <img className="w24" src="/arrow-right.svg" />
+        <Link href="/case-studies/access">
+          <span className="d-flex align-item-center cursor-pointer">
+            <h2 className="alata normal fs36 m0">Next case study</h2>
+            <div className="w24 " />
+            <img className="w24" src="/arrow-right.svg" />
+          </span>
+        </Link>
       </div>
       <style jsx>{`
         @media only screen and (min-width: 976px) {
