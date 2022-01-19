@@ -10,6 +10,7 @@ export default function Home() {
           style={{
             position: "absolute",
             right: -150,
+            top: "calc(50% - 200px)",
           }}
           src="/polygon1.svg"
         />
@@ -17,6 +18,7 @@ export default function Home() {
           style={{
             position: "absolute",
             right: "30%",
+            top: "calc(50% - 300px)",
           }}
           src="/polygon2.svg"
         />
@@ -43,7 +45,23 @@ export default function Home() {
                   <div className="section-subtitle">
                     September 2021 - November 2021
                   </div>
-                  <Link href="/landing/detail">
+                  <Link href="/case-studies/campaign">
+                    <div className="section-btn">View Details</div>
+                  </Link>
+                </div>
+              </div>
+              <div className="carousel-page-content">
+                <div className="rightsection sm-ph32">
+                  <div className="bg-card mw-100 sm-br16">
+                    <img className="mw-100" src="/access-banner.png" />
+                  </div>
+                </div>
+                <div className="leftsection sm-ph32">
+                  <h1 className="Alata section-title minw500 m0">
+                    RBAC Refactor & Redesign
+                  </h1>
+                  <div className="section-subtitle">May 2020 - August 2021</div>
+                  <Link href="/case-studies/access">
                     <div className="section-btn">View Details</div>
                   </Link>
                 </div>
@@ -134,6 +152,7 @@ export default function Home() {
             display: flex;
             min-height: 50vh;
             align-items: stretch;
+            justify-content: space-around;
             flex-direction: row-reverse;
           }
         }
@@ -152,7 +171,7 @@ export default function Home() {
           }
           .section-title {
             display: inline;
-            font-size: 36px
+            font-size: 36px;
           }
         }
       `}</style>
