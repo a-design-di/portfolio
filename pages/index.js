@@ -1,28 +1,53 @@
 import Link from "next/link";
 import Layout from "../components/Layout";
-import ScrollIndicator from "../components/ScrollIndicator";
+import { useViewportScroll, useTransform, motion } from "framer-motion";
+
+const PAGES = 2;
 
 export default function Home() {
+  const { scrollYProgress: progress } = useViewportScroll();
+  const page1y = useTransform(
+    progress,
+    [0, 0.45, 0.55, 1],
+    [0, 0, -1000, -1000],
+    "easeInOut"
+  );
+  const page2y = useTransform(
+    progress,
+    [0, 0.45, 0.55, 1],
+    [1000, 1000, 0, 0],
+    "easeInOut"
+  );
+
   return (
     <Layout>
-      <section className="bg-main min-page-height overflow-hidden mw-100vw relative">
+      <section
+        style={{ height: `${PAGES}00vh` }}
+        className="bg-main min-page-height overflow-hidden mw-100vw relative"
+      >
         <img
           style={{
-            position: "absolute",
+            position: "fixed",
             right: -150,
-            top: "calc(50% - 200px)",
+            top: "calc(50% - 100px)",
           }}
           src="/polygon1.svg"
         />
         <img
           style={{
-            position: "absolute",
+            position: "fixed",
             right: "30%",
-            top: "calc(50% - 300px)",
+            top: "calc(50% - 200px)",
           }}
           src="/polygon2.svg"
         />
-        <div className="content-wrapper">
+        <div
+          style={{
+            position: "fixed",
+            top: 100,
+          }}
+          className="content-wrapper"
+        >
           <div className="carousel relative">
             <div style={{ width: 80 }} />
             <div className="slick">
@@ -31,8 +56,12 @@ export default function Home() {
             </div>
             <div className="slick-gap"></div>
 
-            <div className="carousel-page">
-              <div className="carousel-page-content">
+            <div className="carousel-page relative">
+              <motion.div
+                layout
+                style={{ y: page1y }}
+                className={`carousel-page-content w100vw absolute min-page-height`}
+              >
                 <div className="rightsection sm-ph32">
                   <div className="bg-card mw-100 sm-br16">
                     <img className="mw-100" src="/campaign-banner.png" />
@@ -49,11 +78,15 @@ export default function Home() {
                     <div className="section-btn">View Details</div>
                   </Link>
                 </div>
-              </div>
-              <div className="carousel-page-content">
+              </motion.div>
+              <motion.div
+                layout
+                style={{ y: page2y }}
+                className={`carousel-page-content w100vw absolute min-page-height`}
+              >
                 <div className="rightsection sm-ph32">
                   <div className="bg-card mw-100 sm-br16">
-                    <img className="mw-100" src="/access-banner.png" />
+                    <img className="mw354" src="/access-banner.png" />
                   </div>
                 </div>
                 <div className="leftsection sm-ph32">
@@ -65,7 +98,7 @@ export default function Home() {
                     <div className="section-btn">View Details</div>
                   </Link>
                 </div>
-              </div>
+              </motion.div>
             </div>
 
             <div style={{ width: 128 }} />
@@ -106,66 +139,8 @@ export default function Home() {
             justify-content: center;
             align-items: flex-start;
           }
-          .carousel-page {
-            right: 48px;
-            min-height: 50vh;
-            flex: 1;
-          }
-          .carousel {
-            flex: 1;
-            margin: auto;
-            display: flex;
-            min-height: 50vh;
-            align-items: stretch;
-            flex-direction: row-reverse;
-          }
-          .slick {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 8px;
-          }
-          .dot {
-            width: 8px;
-            height: 16px;
-            background: #565a6f;
-            border-radius: 8px;
-          }
-          .dot[active="active"] {
-            width: 8px;
-            height: 16px;
-            background: #ffffff;
-            border-radius: 8px;
-          }
-          .slick-gap {
-            width: 40px;
-          }
-          .content-wrapper {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            display: flex;
-          }
-          .carousel-page-content {
-            display: flex;
-            min-height: 50vh;
-            align-items: stretch;
-            justify-content: space-around;
-            flex-direction: row-reverse;
-          }
         }
         @media only screen and (max-width: 768px) {
-          .carousel-page-content {
-            display: flex;
-            min-height: 50vh;
-            align-items: stretch;
-            justify-content: center;
-            flex-direction: column;
-            min-height: calc(100vh - 44px);
-            box-sizing: border-box;
-          }
           .leftsection {
             padding-top: 16px;
           }

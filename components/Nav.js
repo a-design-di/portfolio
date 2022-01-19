@@ -9,11 +9,11 @@ export default function nav() {
     <>
       <div className="nav">
         <Link href="/">
-          <img src="/logo.svg"></img>
+          <img className="cursor-pointer" src="/logo.svg"></img>
         </Link>
         <div className="w16"></div>
         <Link href="/">
-          <h3>Vigor Arisandi</h3>
+          <h3 className="cursor-pointer">Vigor Arisandi</h3>
         </Link>
         <div className="space"></div>
         <Link href="/about" active={isAboutPage}>

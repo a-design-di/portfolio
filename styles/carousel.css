@@ -1,0 +1,59 @@
+@media only screen and (min-width: 768px) {
+  .carousel-page {
+    right: 48px;
+    flex: 1;
+  }
+  .carousel {
+    flex: 1;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+    flex-direction: row-reverse;
+  }
+  .slick {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+  }
+  .dot {
+    width: 8px;
+    height: 16px;
+    background: #565a6f;
+    border-radius: 8px;
+  }
+  .dot[active="active"] {
+    width: 8px;
+    height: 16px;
+    background: #ffffff;
+    border-radius: 8px;
+  }
+  .slick-gap {
+    width: 40px;
+  }
+  .content-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+  }
+  .carousel-page-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .carousel-page-content {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+    min-height: calc(100vh - 44px);
+    box-sizing: border-box;
+  }
+}
