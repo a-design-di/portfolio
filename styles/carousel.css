@@ -1,6 +1,35 @@
+.content-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+}
+
+.carousel {
+  flex: 1;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.slick {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+.dot {
+  width: 8px;
+  height: 16px;
+  border-radius: 8px;
+}
+
 @media only screen and (min-width: 768px) {
   .carousel-page {
-    right: 48px;
+    height: 400px;
     flex: 1;
   }
   .carousel {
@@ -8,7 +37,7 @@
     margin: auto;
     height: 100%;
     display: flex;
-    align-items: stretch;
+    align-items: center;
     flex-direction: row-reverse;
   }
   .slick {
@@ -20,25 +49,19 @@
   .dot {
     width: 8px;
     height: 16px;
-    background: #565a6f;
     border-radius: 8px;
   }
-  .dot[active="active"] {
-    width: 8px;
-    height: 16px;
-    background: #ffffff;
-    border-radius: 8px;
+  .slick-gap-right {
+    width: 80px;
   }
-  .slick-gap {
+  .slick-gap-left {
     width: 40px;
   }
+  .slick-gap-oppsite {
+    width: 128px;
+  }
   .content-wrapper {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
+    top: 100px;
   }
   .carousel-page-content {
     display: flex;
@@ -47,13 +70,42 @@
     flex-direction: row-reverse;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1279px) {
   .carousel-page-content {
     display: flex;
-    align-items: stretch;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
-    min-height: calc(100vh - 44px);
     box-sizing: border-box;
+  }
+
+  .slick-gap-right {
+    width: 30px;
+  }
+  .slick-gap-left {
+    width: 10px;
+  }
+  .slick-gap-oppsite {
+    width: 48px;
+  }
+  .content-wrapper {
+    top: 44px;
+  }
+  .carousel-page {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .slick-gap-right {
+    width: 10px;
+  }
+  .slick-gap-left {
+    width: 10px;
+  }
+  .slick-gap-oppsite {
+    width: 16px;
   }
 }

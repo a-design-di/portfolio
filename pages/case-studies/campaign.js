@@ -19,11 +19,11 @@ export default function campaign_detail() {
   return (
     <Layout>
       <section id="top" className="bg-main relative">
-        <div className="content-container content-section pb40 pt40 ph80 d-flex flex-column justify-content-center">
+        <div className="content-container content-section pb40 pt40 ph80 sm-py16 sm-ph16 d-flex flex-column justify-content-center">
           <Link href="/">
             <img className="absolute t0" src="/back.svg"></img>
           </Link>
-          <div className="d-flex align-items-center ">
+          <div className="d-flex align-items-center sm-flex-column ">
             <div className="flex-fill" />
             <img src="/campaign-banner.png" className="mh16"></img>
             <div className="flex-fill" />
@@ -36,7 +36,7 @@ export default function campaign_detail() {
               </div>
             </div>
           </div>
-          <div className="d-flex gapx60">
+          <div className="d-flex gapx60 sm-flex-column">
             <h2 className="alata">Background</h2>
             <h3 className="mw1080">
               The client was a marketing lead for a B2C application with
@@ -50,9 +50,9 @@ export default function campaign_detail() {
         </div>
       </section>
       <section id="process" className="bg-plain relative">
-        <div className="content-container pb40 pt40 ph80 d-flex overflow-hidden">
+        <div className="content-container pb40 pt40 ph80  sm-py16 sm-ph16  d-flex overflow-hidden sm-flex-column">
           <h2 className="alata flex-shrink-0">My Process</h2>
-          <div className="relative" style={{ marginLeft: 60, height: 200 }}>
+          <div className="process-image-container">
             <img src="/process-6.svg"></img>
             <div
               style={{ left: 58, bottom: 60 }}
@@ -103,14 +103,14 @@ export default function campaign_detail() {
             ></img>
             <img
               className="absolute"
-              style={{ right: 12, top: 94 }}
+              style={{ left: 1092, top: 94 }}
               src="/process-circle.svg"
             ></img>
           </div>
         </div>
       </section>
       <div id="interview" className="bg-main relative">
-        <div className="content-container pb40 pt40 ph80 two-side-section">
+        <div className="content-container pb40 pt40 ph80 sm-py16 sm-ph16 two-side-section">
           <div>
             <div className="d-flex align-items-center">
               <img className="mr10 w24" src="/interview-white.svg"></img>
@@ -165,7 +165,7 @@ export default function campaign_detail() {
           </div>
         </div>
       </div>
-      <div id="brain" className="bg-plain pb34 pt40 ph80 text-center">
+      <div id="brain" className="bg-plain pb34 pt40 ph80 sm-py16 sm-ph16  text-center">
         <h2 className="alata d-inline-flex align-items-center">
           <img className="mr10 w24" src="/brain.svg"></img>
           Brainstorming Workshop
@@ -181,7 +181,7 @@ export default function campaign_detail() {
         <LazyImg className=" br10 mw640" src="/workshop-pic.jpg" />
       </div>
       <div id="ia" className="bg-main relative">
-        <div className="content-container  pb40 pt40 ph80 two-side-section">
+        <div className="content-container  pb40 pt40 ph80 sm-py16 sm-ph16  two-side-section">
           <div>
             <div className="d-flex align-items-center">
               <img className="mr10 w24" src="/ia.svg"></img>
@@ -231,7 +231,7 @@ export default function campaign_detail() {
           </div>
         </div>
       </div>
-      <div id="abn" className="bg-plain pb50 pt40 ph80 text-center">
+      <div id="abn" className="bg-plain pb50 pt40 ph80 sm-py16 sm-ph16  text-center">
         <h2 className="alata d-inline-flex align-items-center fs28">
           <img className="mr10 w24" src="/abn.svg"></img>
           A/B/n Testing
@@ -269,7 +269,7 @@ export default function campaign_detail() {
       </div>
 
       <div id="mockup" className="bg-main relative">
-        <div className="content-container  pb40 pt40 ph80">
+        <div className="content-container  pb40 pt40 ph80 sm-py16 sm-ph16 ">
           <h2 className="alata d-inline-flex align-items-center fs28 m0">
             <img className="mr10 w24" src="/mock.svg"></img>
             Mockup
@@ -440,6 +440,19 @@ export default function campaign_detail() {
         </Link>
       </div>
       <style jsx>{`
+        .process-image-container {
+          position: relative;
+          margin-left: 60px;
+          height: 200px;
+        }
+
+        @media only screen and (max-width: 767px) {
+          .process-image-container {
+            margin-left: 0;
+            height: 220px;
+            overflow-x: scroll;
+          }
+        }
         @media only screen and (min-width: 976px) {
           .two-side-section {
             display: flex;

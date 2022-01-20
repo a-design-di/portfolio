@@ -1,28 +1,35 @@
 import Link from "next/link";
 import Layout from "../components/Layout";
 import { useViewportScroll, useTransform, motion } from "framer-motion";
+import { useCallback, useEffect, useState } from "react";
 
 const PAGES = 2;
+const ALL_PAGES = ["page1", "page2"];
 
 export default function Home() {
-  const { scrollYProgress: progress } = useViewportScroll();
-  const page1y = useTransform(
-    progress,
-    [0, 0.45, 0.55, 1],
-    [0, 0, -1000, -1000],
-    "easeInOut"
-  );
-  const page2y = useTransform(
-    progress,
-    [0, 0.45, 0.55, 1],
-    [1000, 1000, 0, 0],
-    "easeInOut"
+  const [page, setPage] = useState(ALL_PAGES[0]);
+  const [pageHeight, setPageHeight] = useState(0);
+
+  useEffect(
+    () =>
+      (window.onscroll = () => {
+        const newPage = parseInt(document.documentElement.scrollTop / 100);
+        setPage(ALL_PAGES[newPage] || ALL_PAGES[ALL_PAGES.length - 1]);
+      }),
+    [page]
   );
 
+  useEffect(() => {
+    setPageHeight(window.innerWidth < 1280 ? 700 : 400);
+  }, []);
+
+  if (!pageHeight) {
+    return null;
+  }
   return (
     <Layout>
       <section
-        style={{ height: `${PAGES}00vh` }}
+        style={{ height: `calc(100vh - 100px + ${PAGES * 100 - 1}px)` }}
         className="bg-main min-page-height overflow-hidden mw-100vw relative"
       >
         <img
@@ -41,30 +48,53 @@ export default function Home() {
           }}
           src="/polygon2.svg"
         />
-        <div
-          style={{
-            position: "fixed",
-            top: 100,
-          }}
-          className="content-wrapper"
-        >
-          <div className="carousel relative">
-            <div style={{ width: 80 }} />
+        <div className="content-wrapper">
+          <motion.div animate={page} className="carousel relative">
+            <div className="slick-gap-right" />
             <div className="slick">
-              <div className="dot" active="active" />
-              <div className="dot" />
+              <motion.div
+                className="dot cursor-pointer z2"
+                variants={{
+                  page1: { background: "#ffffff" },
+                  page2: { background: "#565a6f" },
+                }}
+                onClick={() =>
+                  window.scrollTo({ left: 0, top: 50, behavior: "smooth" })
+                }
+              />
+              <motion.div
+                className="dot cursor-pointer z2"
+                variants={{
+                  page1: { background: "#565a6f" },
+                  page2: { background: "#ffffff" },
+                }}
+                onClick={() =>
+                  window.scrollTo({ left: 0, top: 150, behavior: "smooth" })
+                }
+              />
             </div>
-            <div className="slick-gap"></div>
+            <div className="slick-gap-left" />
 
             <div className="carousel-page relative">
               <motion.div
                 layout
-                style={{ y: page1y }}
-                className={`carousel-page-content w100vw absolute min-page-height`}
+                animate={page}
+                transition={{ duration: 0.5, type: "tween" }}
+                initial={{ opacity: 0, y: -pageHeight }}
+                variants={{
+                  page1: { y: 0, opacity: 1, x: 0 },
+                  page2: { y: -pageHeight, opacity: 0.4, x: 0, scale: 0.85 },
+                }}
+                onClick={() =>
+                  window.scrollTo({ left: 0, top: 50, behavior: "smooth" })
+                }
+                className={`carousel-page-content w-100 absolute`}
               >
                 <div className="rightsection sm-ph32">
-                  <div className="bg-card mw-100 sm-br16">
-                    <img className="mw-100" src="/campaign-banner.png" />
+                  <div className="home-card mw-100 sm-br16 br32 d-flex align-items-center justify-content-center relative overflow-hidden">
+                    <div className="bg-card2 z0 abs-fill sm-d-none"></div>
+                    <div className="bg-card z0 abs-fill sm-d-none"></div>
+                    <img className="mw354 z1" src="/campaign-banner.png" />
                   </div>
                 </div>
                 <div className="leftsection sm-ph32">
@@ -80,13 +110,23 @@ export default function Home() {
                 </div>
               </motion.div>
               <motion.div
-                layout
-                style={{ y: page2y }}
-                className={`carousel-page-content w100vw absolute min-page-height`}
+                animate={page}
+                initial={{ opacity: 0, y: pageHeight }}
+                transition={{ duration: 0.5, type: "tween" }}
+                variants={{
+                  page1: { y: pageHeight, opacity: 0.4, x: 0, scale: 0.85 },
+                  page2: { y: 0, opacity: 1, x: 0 },
+                }}
+                onClick={() =>
+                  window.scrollTo({ left: 0, top: 150, behavior: "smooth" })
+                }
+                className={`carousel-page-content w-100 absolute`}
               >
                 <div className="rightsection sm-ph32">
-                  <div className="bg-card mw-100 sm-br16">
-                    <img className="mw354" src="/access-banner.png" />
+                  <div className="home-card mw-100 sm-br16 br32 d-flex align-items-center justify-content-center relative overflow-hidden">
+                    <div className="bg-card2 z0 abs-fill sm-d-none"></div>
+                    <div className="bg-card z0 abs-fill sm-d-none"></div>
+                    <img className="mw354 z1" src="/access-banner.png" />
                   </div>
                 </div>
                 <div className="leftsection sm-ph32">
@@ -100,9 +140,8 @@ export default function Home() {
                 </div>
               </motion.div>
             </div>
-
-            <div style={{ width: 128 }} />
-          </div>
+            <div className="slick-gap-oppsite" />
+          </motion.div>
         </div>
       </section>
       <style jsx>{`
@@ -129,6 +168,11 @@ export default function Home() {
 
         .leftsection {
           padding-top: 0;
+        }
+        .leftsection,
+        .rightsection {
+          max-width: 100%;
+          box-sizing: border-box;
         }
 
         @media only screen and (min-width: 768px) {

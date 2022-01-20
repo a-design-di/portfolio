@@ -19,11 +19,11 @@ export default function campaign_detail() {
   return (
     <Layout>
       <section id="top" className="bg-main relative">
-        <div className="content-container content-section pb40 pt40 ph80 d-flex flex-column justify-content-center">
+        <div className="content-container content-section pb40 pt40 ph80 sm-py16 sm-ph16 d-flex flex-column justify-content-center">
           <Link href="/">
             <img className="absolute t0" src="/back.svg"></img>
           </Link>
-          <div className="d-flex align-items-center ">
+          <div className="d-flex align-items-center sm-flex-column">
             <div className="flex-fill" />
             <img src="/access-banner.png" className="mh16 mw354"></img>
             <div className="flex-fill" />
@@ -36,7 +36,7 @@ export default function campaign_detail() {
               </div>
             </div>
           </div>
-          <div className="d-flex gapx60">
+          <div className="d-flex gapx60 sm-flex-column">
             <h2 className="alata">Background</h2>
             <h3 className="mw1080">
               The client was an admin department that was managing around 2,300
@@ -50,15 +50,15 @@ export default function campaign_detail() {
         </div>
       </section>
       <section id="process" className="bg-plain relative">
-        <div className="content-container pb40 pt40 ph80 d-flex overflow-hidden">
+        <div className="content-container pb40 pt40 ph80 sm-py16 sm-ph16 d-flex overflow-hidden sm-flex-column">
           <h2 className="alata flex-shrink-0">My Process</h2>
-          <div className="relative" style={{ marginLeft: 60, height: 200 }}>
+          <div className="relative process-image-container">
             <img src="/access-process.svg"></img>
           </div>
         </div>
       </section>
       <div id="interview" className="bg-main relative">
-        <div className="content-container pb40 pt40 ph80 two-side-section">
+        <div className="content-container pb40 pt40 ph80 sm-py16 sm-ph16 two-side-section">
           <div>
             <div className="d-flex align-items-center">
               <img className="mr10 w24" src="/document-white.svg"></img>
@@ -91,7 +91,7 @@ export default function campaign_detail() {
           </div>
         </div>
       </div>
-      <div id="brain" className="bg-plain pb34 pt40 ph80 text-center">
+      <div id="brain" className="bg-plain pb34 pt40 ph80 sm-py16 sm-ph16 text-center">
         <h2 className="alata d-inline-flex align-items-center">
           <img className="mr10 w24" src="/interview-white.svg"></img>
           Contextual Inquiry
@@ -118,7 +118,7 @@ export default function campaign_detail() {
             <video
               className="mw520 br10"
               controls
-              src="/access-heuristic (3).mov"
+              src="/access-heuristic (3).mp4"
             />
             <div className="caption-14 text-left">
               Now that... is such a massive list to scroll without search
@@ -129,7 +129,7 @@ export default function campaign_detail() {
         </div>
       </div>
       <div id="ia" className="bg-main relative">
-        <div className="content-container  pb40 pt40 ph80 two-side-section">
+        <div className="content-container  pb40 pt40 ph80 sm-py16 sm-ph16 two-side-section">
           <div>
             <div className="d-flex align-items-center">
               <img className="mr10 w24" src="/idea-white.svg"></img>
@@ -164,7 +164,7 @@ export default function campaign_detail() {
           </div>
         </div>
       </div>
-      <div id="abn" className="bg-plain pb50 pt40 ph80 text-center">
+      <div id="abn" className="bg-plain pb50 pt40 ph80  sm-py16 sm-ph16 text-center">
         <h2 className="alata d-inline-flex align-items-center fs28">
           <img className="mr10 w24" src="/wireframe-white.svg"></img>
           Wireframe
@@ -212,7 +212,7 @@ export default function campaign_detail() {
       </div>
 
       <div id="mockup" className="bg-main relative">
-        <div className="content-container  pb40 pt40 ph80">
+        <div className="content-container  pb40 pt40 ph80 sm-py16 sm-ph16">
           <h2 className="alata d-inline-flex align-items-center fs28 m0">
             <img className="mr10 w24" src="/mock.svg"></img>
             Mockup
@@ -227,20 +227,29 @@ export default function campaign_detail() {
           <div style={{ height: 30 }} />
           <div className="d-flex gapx60 gapy30 justify-content-center flex-wrap">
             <div className="mw520">
-              <LazyImg className="mw-100 br10 mr10" src="/access-mockup (1).png" />
+              <LazyImg
+                className="mw-100 br10 mr10"
+                src="/access-mockup (1).png"
+              />
               <div className="caption-14">
                 A directory page for the super admin to connect to the third
                 party.
               </div>
             </div>
             <div className="mw520">
-              <LazyImg className="mw-100 br10 mr10" src="/access-mockup (2).png" />
+              <LazyImg
+                className="mw-100 br10 mr10"
+                src="/access-mockup (2).png"
+              />
               <div className="caption-14">
                 Some required fields from one of the third parties.
               </div>
             </div>
             <div className="mw520">
-              <LazyImg className="mw-100 br10 mr10" src="/access-mockup (3).png" />
+              <LazyImg
+                className="mw-100 br10 mr10"
+                src="/access-mockup (3).png"
+              />
               <div className="caption-14">
                 A hierarchy tree for displaying the overall structure for admin
                 to otganize the access. User can also change the business logic
@@ -248,7 +257,10 @@ export default function campaign_detail() {
               </div>
             </div>
             <div className="mw520">
-              <LazyImg className="mw-100 br10 mr10" src="/access-mockup (4).png" />
+              <LazyImg
+                className="mw-100 br10 mr10"
+                src="/access-mockup (4).png"
+              />
               <div className="caption-14">
                 The detail page to track all of the access within an account.
               </div>
@@ -276,7 +288,7 @@ export default function campaign_detail() {
               onClick={() => scrollTo("#interview")}
               className="w46 h46 bg-c4 br-50 d-flex justify-content-center align-items-center cursor-pointer"
             >
-              <img src="/ui-link.svg" />
+              <img className="w36" src="/document-black.svg" />
             </motion.div>
             <motion.div
               initial={{ background: "#c4c4c4" }}
@@ -284,7 +296,7 @@ export default function campaign_detail() {
               onClick={() => scrollTo("#brain")}
               className="w46 h46 bg-c4 br-50 d-flex justify-content-center align-items-center cursor-pointer"
             >
-              <img src="/brain-link.svg" />
+              <img className="w36" src="/interview-black.svg" />
             </motion.div>
             <motion.div
               initial={{ background: "#c4c4c4" }}
@@ -292,7 +304,7 @@ export default function campaign_detail() {
               onClick={() => scrollTo("#ia")}
               className="w46 h46 bg-c4 br-50 d-flex justify-content-center align-items-center cursor-pointer"
             >
-              <img src="/ia-link.svg" />
+              <img className="w36" src="/idea-black.svg" />
             </motion.div>
             <motion.div
               initial={{ background: "#c4c4c4" }}
@@ -300,7 +312,7 @@ export default function campaign_detail() {
               onClick={() => scrollTo("#abn")}
               className="w46 h46 bg-c4 br-50 d-flex justify-content-center align-items-center cursor-pointer"
             >
-              <img src="/abn-link.svg" />
+              <img className="w36" src="/wireframe-black.svg" />
             </motion.div>
             <motion.div
               initial={{ background: "#c4c4c4" }}
@@ -351,6 +363,19 @@ export default function campaign_detail() {
         </Link>
       </div>
       <style jsx>{`
+        .process-image-container {
+          position: relative;
+          margin-left: 60px;
+          height: 200px;
+        }
+
+        @media only screen and (max-width: 767px) {
+          .process-image-container {
+            margin-left: 0;
+            height: 220px;
+            overflow-x: scroll;
+          }
+        }
         @media only screen and (min-width: 976px) {
           .two-side-section {
             display: flex;

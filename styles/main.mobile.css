@@ -13,6 +13,14 @@
     height: 44px;
   }
 
+  .sm-py16 {
+    padding-top: 16px;
+    padding-left: 16px;
+  }
+  .sm-ph16 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
   .sm-ph32 {
     padding-left: 32px;
     padding-right: 32px;
@@ -20,5 +28,11 @@
 
   .sm-br16 {
     border-radius: 16px;
+  }
+  .sm-d-none {
+    display: none;
+  }
+  .sm-flex-column {
+    flex-direction: column;
   }
 }

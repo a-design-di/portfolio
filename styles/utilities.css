@@ -24,6 +24,9 @@
 .w24 {
   width: 24px;
 }
+.w36 {
+  width: 36px;
+}
 .w46 {
   width: 46px;
 }
@@ -47,10 +50,10 @@
   width: 100%;
 }
 .mw354 {
-  max-width: 354px;
+  max-width: min(354px, 100%);
 }
 .mw520 {
-  max-width: 520px;
+  max-width: min(520px, 100%);
 }
 .mw580 {
   max-width: 580px;
@@ -59,7 +62,7 @@
   max-width: 610px;
 }
 .mw640 {
-  max-width: 640px;
+    max-width: min(640px, 100%);
 }
 .mw720 {
   max-width: 720px;
@@ -68,7 +71,7 @@
   max-width: 1080px;
 }
 .mw1100 {
-  max-width: min(100vw - 80px, 1100px);
+  max-width: min(100%, 1100px);
 }
 .mw1280 {
   max-width: 1280px;
@@ -87,6 +90,9 @@
 }
 .br30 {
   border-radius: 30px;
+}
+.br32 {
+  border-radius: 32px;
 }
 .br-50 {
   border-radius: 50%;
@@ -146,14 +152,16 @@
 }
 
 .bg-card {
-  background: url(../public/AdobeStock20_217854337%201.png),
-    linear-gradient(
-      109.77deg,
-      rgba(255, 255, 255, 0.56) 11.68%,
-      rgba(255, 255, 255, 0) 65.64%
-    );
-  backdrop-filter: blur(50px);
-  border-radius: 32px;
+  background: url(../public/AdobeStock20_217854337%201.png);
+  opacity: 0.2;
+}
+.bg-card2 {
+  background: linear-gradient(
+    109.77deg,
+    rgba(255, 255, 255, 0.56) 11.68%,
+    rgba(255, 255, 255, 0) 65.64%
+  );
+  opacity: 0.4;
 }
 .bg-card-border {
   overflow: hidden;
@@ -229,6 +237,14 @@
   position: absolute;
 }
 
+.abs-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 .text-center {
   text-align: center;
 }
@@ -246,4 +262,14 @@
 }
 .cursor-pointer {
   cursor: pointer;
+}
+
+.z0 {
+  z-index: 0;
+}
+.z1 {
+  z-index: 1;
+}
+.z2 {
+  z-index: 2;
 }
