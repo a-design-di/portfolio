@@ -2,6 +2,10 @@
   font-family: "Alata", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+.archivo {
+  font-family: "Archivo Black", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
 
 .bold {
   font-weight: bold;
@@ -9,14 +13,27 @@
 .normal {
   font-weight: normal;
 }
-
+.nowrap {
+    white-space: nowrap;
+}
+.fs24 {
+  font-size: 24px;
+}
 .fs36 {
   font-size: 36px;
   line-height: 48px;
 }
-
+.fs40 {
+  font-size: 40px;
+}
+.lh44 {
+  line-height: 44px;
+}
 .w16 {
   width: 16px;
+}
+.w18 {
+  width: 18px;
 }
 .w20 {
   width: 20px;
@@ -33,21 +50,43 @@
 .w60 {
   width: 60px;
 }
-.h46 {
-  height: 46px;
-}
-.h100 {
-  height: 100px;
-}
-
 .w100 {
   width: 100px;
+}
+.w233 {
+  width: 233px;
+}
+.w252 {
+  width: 252px;
 }
 .w100vw {
   width: 100vw;
 }
 .w-100 {
   width: 100%;
+}
+.h36 {
+  height: 36px;
+}
+.h46 {
+  height: 46px;
+}
+.h48 {
+  height: 48px;
+}
+.h100 {
+  height: 100px;
+}
+.h120 {
+  height: 120px;
+}
+
+.h296 {
+  height: 296px;
+}
+
+.mw252 {
+  max-width: min(252px, 100%);
 }
 .mw354 {
   max-width: min(354px, 100%);
@@ -62,13 +101,22 @@
   max-width: 610px;
 }
 .mw640 {
-    max-width: min(640px, 100%);
+  max-width: min(640px, 100%);
 }
 .mw720 {
-  max-width: 720px;
+  max-width: min(720px, 100%);
+}
+.mw762 {
+  max-width: min(762px, 100%);
+}
+.mw1024 {
+  max-width: min(100%, 1024px);
 }
 .mw1080 {
   max-width: 1080px;
+}
+.mw1052 {
+  max-width: min(100%, 1052px);
 }
 .mw1100 {
   max-width: min(100%, 1100px);
@@ -104,6 +152,9 @@
 .t0 {
   top: 0px;
 }
+.b0 {
+  bottom: 0px;
+}
 .mh-auto {
   margin-left: auto;
   margin-right: auto;
@@ -114,6 +165,12 @@
 .mh16 {
   margin-left: 16px;
   margin-right: 16px;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.mt20 {
+  margin-top: 20px;
 }
 .mr10 {
   margin-right: 10px;
@@ -199,7 +256,6 @@
   padding-left: 80px;
   padding-right: 80px;
 }
-
 .d-flex {
   display: flex;
 }
@@ -224,6 +280,9 @@
 }
 .justify-content-center {
   justify-content: center;
+}
+.justify-content-between {
+  justify-content: space-between;
 }
 
 .flex-shrink-0 {
@@ -250,6 +309,9 @@
 }
 .text-left {
   text-align: left;
+}
+.text-right {
+  text-align: right;
 }
 
 .overflow-hidden {

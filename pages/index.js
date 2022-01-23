@@ -105,7 +105,7 @@ export default function Home() {
                     September 2021 - November 2021
                   </div>
                   <Link href="/case-studies/campaign">
-                    <div className="section-btn">View Details</div>
+                    <div className="btn mt20">View Details</div>
                   </Link>
                 </div>
               </motion.div>
@@ -135,7 +135,7 @@ export default function Home() {
                   </h1>
                   <div className="section-subtitle">May 2020 - August 2021</div>
                   <Link href="/case-studies/access">
-                    <div className="section-btn">View Details</div>
+                    <div className="btn mt20">View Details</div>
                   </Link>
                 </div>
               </motion.div>
@@ -153,17 +153,6 @@ export default function Home() {
         .section-subtitle {
           margin-top: 9px;
           line-height: 28px;
-        }
-
-        .section-btn {
-          margin-top: 20px;
-          padding: 16px;
-          color: #2790dd;
-          display: inline-block;
-          border: 2px solid #2790dd;
-          box-sizing: border-box;
-          border-radius: 10px;
-          cursor: pointer;
         }
 
         .leftsection {

@@ -9,8 +9,29 @@
     box-sizing: border-box;
   }
 
+  .sm-w10 {
+    width: 10px;
+  }
+  .sm-w-100 {
+    width: 100%;
+  }
+  .sm-h0 {
+    height: 0px;
+  }
+
+  .sm-h20 {
+    height: 20px;
+  }
+
   .sm-h44 {
     height: 44px;
+  }
+
+  .sm-fs22 {
+    font-size: 22px;
+  }
+  .sm-lh28 {
+    line-height: 28px;
   }
 
   .sm-py16 {
@@ -24,6 +45,13 @@
   .sm-ph32 {
     padding-left: 32px;
     padding-right: 32px;
+  }
+
+  .sm-mb20 {
+    margin-bottom: 20px;
+  }
+  .sm-mr0 {
+    margin-right: 0px;
   }
 
   .sm-br16 {

@@ -21,7 +21,7 @@ export default function campaign_detail() {
       <section id="top" className="bg-main relative">
         <div className="content-container content-section pb40 pt40 ph80 sm-py16 sm-ph16 d-flex flex-column justify-content-center">
           <Link href="/">
-            <img className="absolute t0" src="/back.svg"></img>
+            <img className="absolute t0 cursor-pointer" src="/back.svg"></img>
           </Link>
           <div className="d-flex align-items-center sm-flex-column ">
             <div className="flex-fill" />

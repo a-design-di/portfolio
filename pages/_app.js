@@ -1,4 +1,4 @@
-import "../styles/main.css";
+import "../styles/app.css";
 import "../styles/main.mobile.css";
 // import "../vendors/scroll.min.js";
 

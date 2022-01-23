@@ -21,7 +21,7 @@ export default function campaign_detail() {
       <section id="top" className="bg-main relative">
         <div className="content-container content-section pb40 pt40 ph80 sm-py16 sm-ph16 d-flex flex-column justify-content-center">
           <Link href="/">
-            <img className="absolute t0" src="/back.svg"></img>
+            <img className="absolute t0 cursor-pointer" src="/back.svg"></img>
           </Link>
           <div className="d-flex align-items-center sm-flex-column">
             <div className="flex-fill" />
@@ -91,7 +91,10 @@ export default function campaign_detail() {
           </div>
         </div>
       </div>
-      <div id="brain" className="bg-plain pb34 pt40 ph80 sm-py16 sm-ph16 text-center">
+      <div
+        id="brain"
+        className="bg-plain pb34 pt40 ph80 sm-py16 sm-ph16 text-center"
+      >
         <h2 className="alata d-inline-flex align-items-center">
           <img className="mr10 w24" src="/interview-white.svg"></img>
           Contextual Inquiry
@@ -164,7 +167,10 @@ export default function campaign_detail() {
           </div>
         </div>
       </div>
-      <div id="abn" className="bg-plain pb50 pt40 ph80  sm-py16 sm-ph16 text-center">
+      <div
+        id="abn"
+        className="bg-plain pb50 pt40 ph80  sm-py16 sm-ph16 text-center"
+      >
         <h2 className="alata d-inline-flex align-items-center fs28">
           <img className="mr10 w24" src="/wireframe-white.svg"></img>
           Wireframe

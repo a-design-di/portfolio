@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Nav from "./Nav";
 
-export default function Layout({children}) {
+export default function Layout({ children }) {
   return (
     <div className="container">
       <Head>
@@ -15,6 +15,10 @@ export default function Layout({children}) {
         ></link>
         <link
           href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
+          rel="stylesheet"
+        ></link>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
           rel="stylesheet"
         ></link>
       </Head>
