@@ -171,7 +171,8 @@ export default function About() {
               model, and technology.
             </div>
             <div className="mw720">
-              <LazyImg className="br10 w-100 sm-mb20" src="/books 1.png" />
+              <video autoplay='1' muted loop 
+              controls className="br10 w-100 sm-mb20" src="/books.mp4" />
               <div className="caption">
                 Feel free to click pause anytime and see the list!
               </div>

@@ -256,13 +256,13 @@ export default function campaign_detail() {
 
         <div className="d-flex gapx60 justify-content-center flex-wrap">
           <video
-            className="mw520 br10"
-            controls
+            className="mw520 br10" autoplay='1' muted loop 
+            controls 
             src="/campaign-testing (1).mp4"
           />
           <video
-            className="mw520 br10"
-            controls
+            className="mw520 br10" autoplay='1' muted loop 
+            controls 
             src="/campaign-testing (2).mp4"
           />
         </div>
