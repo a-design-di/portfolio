@@ -14,7 +14,7 @@
   font-weight: normal;
 }
 .nowrap {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 .fs24 {
   font-size: 24px;
@@ -28,6 +28,9 @@
 }
 .lh44 {
   line-height: 44px;
+}
+.w10 {
+  width: 10px;
 }
 .w16 {
   width: 16px;
@@ -334,4 +337,8 @@
 }
 .z2 {
   z-index: 2;
+}
+
+.border-box {
+  box-sizing: border-box;
 }

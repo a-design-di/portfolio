@@ -7,9 +7,9 @@ export default function About() {
   return (
     <Layout>
       <section id="top" className="bg-main relative">
-        <div className="bg-main ph80 sm-ph16 d-flex flex-column justify-content-center overflow-hidden">
+        <div className="bg-main ph80 sm-ph16 d-flex w-100 flex-column justify-content-center align-items-center  border-box overflow-hidden">
           <div className="h120 sm-h20" />
-          <div className="relative mw762 h296">
+          <div className="relative mw762 h296 w-100">
             <img
               src="/polygon-bg.svg"
               className="mw342 absolute t0"
@@ -124,7 +124,7 @@ export default function About() {
           </div>
           <div className="h120 sm-h20" />
 
-          <div className="mw1052 d-flex sm-flex-column align-items-center justify-content-between">
+          <div className="mw1052 w-100  d-flex sm-flex-column align-items-center justify-content-between">
             <LazyImg
               className="w252 mr10 sm-mr0  sm-mb20"
               src="/dive-figma.png"
@@ -157,7 +157,7 @@ export default function About() {
 
           <div className="h120 sm-h20" />
 
-          <div className="mw1052 d-flex sm-flex-column align-items-center justify-content-between">
+          <div className="mw1052 w-100  d-flex sm-flex-column align-items-center justify-content-between">
             <div className="w252 sm-w-100 mr10  sm-mb20 sm-mr0">
               Books inspire me a lot to see things from different perspectives.
               I believe good UIUX, product owners, project managers, and even
@@ -174,7 +174,8 @@ export default function About() {
 
           <div className="h120 sm-h20" />
 
-          <div className="mw1052 d-flex align-items-center">
+          <div className="mw1052 d-flex w-100 align-items-center">
+            <div className="w10 sm-w0" />
             <div className="alata fs36">Let’s connect!</div>
             <div className="w24 sm-w10" />
             <motion.a
