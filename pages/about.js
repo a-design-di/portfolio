@@ -53,7 +53,7 @@ export default function About() {
                   times: [0.128, 0.205, 0.461, 0.538, 0.795, 0.872, 1],
                 }}
               >
-                Blockchain enthusiat
+                Blockchain enthusiast
               </motion.div>
               <motion.div
                 className="archivo fs40 lh44 sm-fs22 sm-lh28 absolute text-right"
