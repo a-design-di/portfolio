@@ -14,7 +14,7 @@ export default function About() {
               src="/polygon-bg.svg"
               className="mw342 absolute t0"
               style={{
-                right: 10,
+                right: 15,
               }}
             />
             <img
@@ -29,7 +29,7 @@ export default function About() {
                 className="archivo fs40 lh44 sm-fs22 sm-lh28 absolute text-right"
                 style={{
                   right: 218,
-                  top: 78,
+                  top: 94,
                 }}
                 animate={{ opacity: [1, 0, 0, 0, 0, 1, 1] }}
                 transition={{
@@ -44,7 +44,7 @@ export default function About() {
                 className="archivo fs40 lh44 sm-fs22 sm-lh28 absolute text-right"
                 style={{
                   right: 218,
-                  top: 78,
+                  top: 94,
                 }}
                 animate={{ opacity: [0, 1, 1, 0, 0, 0, 0] }}
                 transition={{
@@ -59,7 +59,7 @@ export default function About() {
                 className="archivo fs40 lh44 sm-fs22 sm-lh28 absolute text-right"
                 style={{
                   right: 218,
-                  top: 78,
+                  top: 94,
                 }}
                 animate={{ opacity: [0, 0, 0, 1, 1, 0, 0] }}
                 transition={{
@@ -179,6 +179,7 @@ export default function About() {
             <div className="alata fs36">Let’s connect!</div>
             <div className="w24 sm-w10" />
             <motion.a
+              href="https://linkedin.com/in/vigorarisandi/"
               initial={{
                 background: "#C3C8CB",
               }}
@@ -194,6 +195,7 @@ export default function About() {
             </motion.a>
             <div className="w24 sm-w10" />
             <motion.a
+              href="https://dribbble.com/vigorarisandi"
               initial={{
                 background: "#C3C8CB",
               }}

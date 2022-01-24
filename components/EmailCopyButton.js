@@ -6,7 +6,7 @@ export default function EmailCopyButton() {
 
   const doCopy = useCallback(() => {
     try {
-      copy("");
+      copy("vigorarisandi94@gmail.com");
       setCopied(true);
     } catch {}
   }, [copy]);
