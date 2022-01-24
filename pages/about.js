@@ -12,25 +12,19 @@ export default function About() {
           <div className="relative mw762 h296 w-100">
             <img
               src="/polygon-bg.svg"
-              className="mw342 absolute t0"
-              style={{
-                right: 15,
-              }}
+              className="mw342 absolute t0 r15 sm-r0"
             />
             <img
               src="/profpic_no-bg 1.png"
-              className="w233 absolute b0"
+              className="w233 absolute b0 r0 sm-t-45 sm-b-auto sm-r-auto sm-l-50 
+              sm-w150 sm-transy-50"
               style={{
                 right: 0,
               }}
             />
             <motion.div>
               <motion.div
-                className="archivo fs40 lh44 sm-fs22 sm-lh28 absolute text-right"
-                style={{
-                  right: 218,
-                  top: 94,
-                }}
+                className="archivo fs40 lh44 sm-fs22 sm-lh28 absolute text-right r218 t94 sm-r-50 sm-t-45 sm-transy-50"
                 animate={{ opacity: [1, 0, 0, 0, 0, 1, 1] }}
                 transition={{
                   duration: 5,
@@ -41,11 +35,7 @@ export default function About() {
                 Complex problem solver
               </motion.div>
               <motion.div
-                className="archivo fs40 lh44 sm-fs22 sm-lh28 absolute text-right"
-                style={{
-                  right: 218,
-                  top: 94,
-                }}
+                className="archivo fs40 lh44 sm-fs22 sm-lh28 absolute text-right r218 t94 sm-r-50 sm-t-45 sm-transy-50"
                 animate={{ opacity: [0, 1, 1, 0, 0, 0, 0] }}
                 transition={{
                   duration: 5,
@@ -56,11 +46,7 @@ export default function About() {
                 Blockchain enthusiast
               </motion.div>
               <motion.div
-                className="archivo fs40 lh44 sm-fs22 sm-lh28 absolute text-right"
-                style={{
-                  right: 218,
-                  top: 94,
-                }}
+                className="archivo fs40 lh44 sm-fs22 sm-lh28 absolute text-right r218 t94 sm-r-50 sm-t-45 sm-transy-50"
                 animate={{ opacity: [0, 0, 0, 1, 1, 0, 0] }}
                 transition={{
                   duration: 5,
@@ -172,7 +158,7 @@ export default function About() {
             </div>
             <div className="mw720">
               <video autoplay='1' muted loop 
-              controls className="br10 w-100 sm-mb20" src="/books.mp4" />
+              controls playsInline="1" className="br10 w-100 sm-mb20" src="/books.mp4" />
               <div className="caption">
                 Feel free to click pause anytime and see the list!
               </div>
@@ -181,9 +167,9 @@ export default function About() {
 
           <div className="h120 sm-h20" />
 
-          <div className="mw1052 d-flex w-100 align-items-center">
+          <div className="mw1052 d-flex w-100 align-items-center sm-mb36 sm-flex-wrap">
             <div className="w10 sm-w0" />
-            <div className="alata fs36">Let’s connect!</div>
+            <div className="alata fs36 sm-w-100 sm-mb16">Let’s connect!</div>
             <div className="w24 sm-w10" />
             <motion.a
               href="https://linkedin.com/in/vigorarisandi/"

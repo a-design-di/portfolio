@@ -12,6 +12,9 @@
   .sm-w10 {
     width: 10px;
   }
+  .sm-w150 {
+    width: 150px;
+  }
   .sm-w-100 {
     width: 100%;
   }
@@ -47,8 +50,14 @@
     padding-right: 32px;
   }
 
+  .sm-mb16 {
+    margin-bottom: 16px;
+  }
   .sm-mb20 {
     margin-bottom: 20px;
+  }
+  .sm-mb36 {
+    margin-bottom: 36px;
   }
   .sm-mr0 {
     margin-right: 0px;
@@ -62,5 +71,26 @@
   }
   .sm-flex-column {
     flex-direction: column;
+  }
+  .sm-flex-wrap {
+    flex-wrap: wrap;
+  }
+  .sm-t-45 {
+    top: 45%;
+  }
+  .sm-b-auto {
+    bottom: auto;
+  } 
+  .sm-r-auto {
+    right: auto
+  } 
+  .sm-l-50 {
+    left: 50%
+  } 
+  .sm-r-50 {
+    right: 50%
+  } 
+  .sm-transy-50 {
+    transform: translateY(-50%)
   }
 }
