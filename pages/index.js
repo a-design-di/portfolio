@@ -133,7 +133,7 @@ export default function Home() {
                   <h1 className="Alata section-title minw500 m0">
                     RBAC Refactor & Redesign
                   </h1>
-                  <div className="section-subtitle">May 2020 - August 2021</div>
+                  <div className="section-subtitle">May 2020 - August 2020</div>
                   <Link href="/case-studies/access">
                     <div className="btn mt20">View Details</div>
                   </Link>
