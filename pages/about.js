@@ -24,7 +24,7 @@ export default function About() {
             />
             <motion.div>
               <motion.div
-                className="archivo fs40 lh44 sm-fs22 sm-lh28 absolute text-right r218 t94 sm-r-50 sm-t-45 sm-transy-50"
+                className="archivo fs40 lh44 sm-fs28 sm-lh32 absolute text-right r218 t94 sm-r-50 sm-t-45 sm-transy-50"
                 animate={{ opacity: [1, 0, 0, 0, 0, 1, 1] }}
                 transition={{
                   duration: 5,
@@ -35,7 +35,7 @@ export default function About() {
                 Complex problem solver
               </motion.div>
               <motion.div
-                className="archivo fs40 lh44 sm-fs22 sm-lh28 absolute text-right r218 t94 sm-r-50 sm-t-45 sm-transy-50"
+                className="archivo fs40 lh44 sm-fs28 sm-lh32 absolute text-right r218 t94 sm-r-50 sm-t-45 sm-transy-50"
                 animate={{ opacity: [0, 1, 1, 0, 0, 0, 0] }}
                 transition={{
                   duration: 5,
@@ -46,7 +46,7 @@ export default function About() {
                 Blockchain enthusiast
               </motion.div>
               <motion.div
-                className="archivo fs40 lh44 sm-fs22 sm-lh28 absolute text-right r218 t94 sm-r-50 sm-t-45 sm-transy-50"
+                className="archivo fs40 lh44 sm-fs28 sm-lh32 absolute text-right r218 t94 sm-r-50 sm-t-45 sm-transy-50"
                 animate={{ opacity: [0, 0, 0, 1, 1, 0, 0] }}
                 transition={{
                   duration: 5,

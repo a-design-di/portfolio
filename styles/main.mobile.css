@@ -33,8 +33,14 @@
   .sm-fs22 {
     font-size: 22px;
   }
+  .sm-fs28 {
+    font-size: 28px;
+  }
   .sm-lh28 {
     line-height: 28px;
+  }
+  .sm-lh32 {
+    line-height: 32px;
   }
 
   .sm-py16 {
