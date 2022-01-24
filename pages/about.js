@@ -117,7 +117,13 @@ export default function About() {
               </motion.div>
             </div>
             <img
-              style={{ width: 32, height: 28 }}
+              style={{
+                width: 32,
+                height: 28,
+                padding: 10,
+                background: "#000520",
+                boxShadow: "0 0 5px #000520;",
+              }}
               className="absolute"
               src="/heart.svg"
             />
