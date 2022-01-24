@@ -121,7 +121,7 @@ export default function campaign_detail() {
             <video
               className="mw520 br10"
               autoplay='1' muted loop 
-              controls 
+              controls playsInline="1"
               src="/access-heuristic (3).mp4"
             />
             <div className="caption-14 text-left">

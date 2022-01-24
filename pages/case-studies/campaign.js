@@ -257,12 +257,12 @@ export default function campaign_detail() {
         <div className="d-flex gapx60 justify-content-center flex-wrap">
           <video
             className="mw520 br10" autoplay='1' muted loop 
-            controls 
+            controls playsInline="1"
             src="/campaign-testing (1).mp4"
           />
           <video
             className="mw520 br10" autoplay='1' muted loop 
-            controls 
+            controls playsInline="1"
             src="/campaign-testing (2).mp4"
           />
         </div>
